@@ -1,0 +1,115 @@
+/* 全局样式 */
+body {
+  background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+  font-family: 'Segoe UI', system-ui;
+  line-height: 1.6;
+}
+
+/* 超链接样式 */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 教育经历链接颜色 */
+.text-primary a {
+  color: #4e73df;
+}
+
+.text-primary a:hover {
+  text-decoration-color: #4e73df;
+}
+
+/* 奖项链接颜色 */
+.text-success a {
+  color: #1cc88a;
+}
+
+.text-success a:hover {
+  text-decoration-color: #1cc88a;
+}
+
+/* 组织经历链接颜色 */
+.text-info a {
+  color: #36b9cc;
+}
+
+.text-info a:hover {
+  text-decoration-color: #36b9cc;
+}
+
+/* 卡片标题渐变颜色 */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #1cc88a 0%, #13855c 100%);
+}
+
+.bg-gradient-info {
+  background: linear-gradient(135deg, #36b9cc 0%, #258391 100%);
+}
+
+/* 导航栏动画 */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* 主页区域 */
+#home {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+}
+
+.social-links a {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+/* 作品卡片 */
+.project-card, .skill-card, .blog-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 联系表单 */
+#contact {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 12px 15px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .project-card, .skill-card, .blog-card {
+    margin-bottom: 1.5rem;
+  }
+}
